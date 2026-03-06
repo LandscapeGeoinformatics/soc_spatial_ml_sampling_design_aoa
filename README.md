@@ -1,5 +1,6 @@
-# soc_spatial_ml_sampling_design_aoa
-Code supplement for the paper Optimisation of sampling design for spatial soil mapping with machine learning.
+# Code supplement for the paper Optimisation of sampling design for spatial soil mapping with machine learning.
+
+[![DOI](https://zenodo.org/badge/1172630142.svg)](https://doi.org/10.5281/zenodo.18889938)
 
 This repository contains the main scripts used to (1) compute the Area of Applicability (AOA), (2) generate candidate sampling locations using k-means clustering, (3) produce SOC predictions (baseline vs updated RF models), and (4) compare RF model performance via cross-validation.
 
