@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Choi"
+  given-names: "Jeonghwan"
+  orcid: https://orcid.org/0009-0002-5027-1151
+- family-names: "Uuemaa"
+  given-names: "Evelyn"
+  orcid: https://orcid.org/0000-0002-0782-6740
+- family-names: "Ots"
+  given-names: "Minna"
+  orcid: https://orcid.org/0009-0003-9282-6845
+- family-names: "Kmoch"
+  given-names: "Alexander"
+  orcid: https://orcid.org/0000-0003-4386-4450
+title: "Landscape Geoinformatics soc_spatial_ml_sampling_design_aoa code supplement materials"
+version: 1.0.0
+doi: 10.5281/zenodo.18861968
+date-released: 2026-03-06
+url: "https://github.com/LandscapeGeoinformatics/soc_spatial_ml_sampling_design_aoa"
+
+
