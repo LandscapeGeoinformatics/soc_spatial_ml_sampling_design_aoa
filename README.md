@@ -15,7 +15,7 @@ This repository contains the main scripts used to (1) compute the Area of Applic
 ## Repository Structure
 
 ```text
-├── data/           # .pkl, and .onnx model files
+├── models/           # .pkl, and .onnx model files
 ├── scripts/        # .ipynb notebooks for computation
 ├── remoteml_env.yml # Environment for remote workstation tasks
 └── soilml_env.yml   # Environment for local clustering tasks
