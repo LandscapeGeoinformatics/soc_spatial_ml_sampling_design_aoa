@@ -16,8 +16,8 @@ This repository contains the main scripts used to (1) compute the Area of Applic
 ## Repository Structure
 
 ```text
-├── models/           # .pkl, and .onnx model files
-├── scripts/        # .ipynb notebooks for computation
+├── models/          # .pkl and .onnx model files
+├── scripts/         # .ipynb notebooks, R script (kNNDM folds) and fold file
 ├── remoteml_env.yml # Environment for remote workstation tasks
 └── soilml_env.yml   # Environment for local clustering tasks
 ```
@@ -68,9 +68,20 @@ SOC prediction was run on the remote workstation using:
 ## 4) Cross-validation (RF model performance)
 
 **Files and scripts**
-- **Script:** `rf_cross_validation.ipynb`  
-  Computes cross-validation metrics for baseline vs updated RF models.
+- **Script:** `knndm_folds.R`
+  Creates the k-fold nearest neighbour distance matching (kNNDM) cross-validation folds with the CAST R package (R 4.5.3, CAST 1.1.1).
 - **Inputs:**
   - `updated_training_data.gpkg`
+  - `baseline_aoa.tif` (non-NA cells = mapped area used as the prediction domain)
+- **Output:**
+  - `knndm_5folds.csv` (included in this repository)
+
+- **Script:** `rf_cross_validation.ipynb`
+  Computes random and kNNDM cross-validation metrics for baseline vs updated RF models.
+- **Inputs:**
+  - `updated_training_data.gpkg`
+  - `knndm_5folds.csv`
+
+Note: `knndm_5folds.csv` is provided, so `rf_cross_validation.ipynb` can be run without R. Run `knndm_folds.R` only to recreate the folds. Input data (`updated_training_data.gpkg`, `baseline_aoa.tif`) are available on Zenodo: https://doi.org/10.5281/zenodo.18861968.
 
 ---
