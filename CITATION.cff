@@ -14,9 +14,9 @@ authors:
   given-names: "Alexander"
   orcid: https://orcid.org/0000-0003-4386-4450
 title: "Landscape Geoinformatics soc_spatial_ml_sampling_design_aoa code supplement materials"
-version: 1.1.0
+version: 1.2.0
 doi: 10.5281/zenodo.18889938
-date-released: 2026-09-17
+date-released: 2026-11-11
 url: "https://github.com/LandscapeGeoinformatics/soc_spatial_ml_sampling_design_aoa"
 
 
